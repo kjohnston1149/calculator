@@ -33,15 +33,15 @@
 
 // BMI Calculator
 
-// var weight = parseInt(prompt("Enter your weight in pounds: "));
-// var height = parseInt(prompt("Enter your height in inches: "));
-//
-// var calculate = function(weight, height) {
-// 	return (703 * weight) / (height * height);
-// };
-//
-// var bmi = calculate(weight, height);
-// alert("Your bmi is " + bmi);
+var weight = parseInt(prompt("Enter your weight in pounds: "));
+var height = parseInt(prompt("Enter your height in inches: "));
+
+var calculate = function(weight, height) {
+	return (703 * weight) / Math.pow(height, 2);
+};
+
+var bmi = calculate(weight, height);
+alert("Your bmi is " + bmi);
 
 // Temperature converter
 var celsius = parseInt(prompt("Enter the Temperature in Celsius:"));
